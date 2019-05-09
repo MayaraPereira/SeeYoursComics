@@ -1,0 +1,94 @@
+{
+  "comics": [
+    {
+      "title": "Reinado Sombrio",
+      "superhero": "vingadores",
+      "edition": "1",
+      "price": "11.99",
+      "rating": "3",
+      "id": 1,
+      "loan": 1,
+      "date": "2018-12-08",
+      "borrowed_name": "mayara"
+    },
+    {
+      "title": "The Killing Joke",
+      "superhero": "batman",
+      "edition": 8,
+      "price": 10,
+      "rating": "2",
+      "id": 2,
+      "loan": 1,
+      "date": "2018-12-07",
+      "borrowed_name": "ghbjn"
+    },
+    {
+      "title": "A Ultima Caçada De Kraven",
+      "superhero": "homem-aranha",
+      "edition": "23",
+      "price": "4.99",
+      "rating": 0,
+      "id": 3,
+      "date": "2018-12-05",
+      "borrowed_name": "ghj",
+      "loan": 2
+    },
+    {
+      "title": "Tropa dos Lanternas Verdes",
+      "superhero": "Lanterna Verde",
+      "edition": "15",
+      "price": "4.99",
+      "rating": "3",
+      "id": 4,
+      "loan": null
+    },
+    {
+      "title": "Dias de um Futuro Esquecido",
+      "superhero": "xmen",
+      "edition": "31",
+      "price": "12",
+      "rating": 0,
+      "id": 5
+    },
+    {
+      "title": "Planeta Hulk",
+      "superhero": "Hulk",
+      "edition": "15",
+      "price": "2.60",
+      "rating": "3",
+      "id": 6,
+      "loan": null
+    },
+    {
+      "title": "Batman / Flash: O Bóton",
+      "superhero": "batman",
+      "edition": "25",
+      "price": "4.99",
+      "rating": 0,
+      "id": 7
+    },
+    {
+      "title": "uhbbn",
+      "superhero": "thor",
+      "edition": "5",
+      "price": "20",
+      "rating": 0,
+      "id": 8
+    }
+  ],
+  "collections": [
+    {
+      "title": "favorites",
+      "publishing_company": "my favorites",
+      "amount_comics": "",
+      "amount_comics_current": 0,
+      "mean_rating": 5,
+      "comics": [
+        3,
+        5,
+        7
+      ],
+      "id": 1
+    }
+  ]
+}
