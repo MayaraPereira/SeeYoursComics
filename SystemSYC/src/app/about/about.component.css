@@ -1,0 +1,31 @@
+#bg{
+	background-image:url(https://images7.alphacoders.com/434/434074.jpg);
+  background-repeat:no-repeat;
+  background-size:100%;
+  bottom:0;
+	right:0;
+	top:0%;
+  left:0;
+  overflow:auto;
+  padding:3em;
+  position:absolute;
+  text-align:center;
+  background-size:cover;
+}
+.collection{
+	width:50%;
+	left:25%;
+	top:35%;
+	position:absolute;
+	border-radius:35px;
+	border:5px solid;
+	border-color: white;
+	background-color:black;
+}
+
+.collection-item {
+  text-align:center;
+  background-color:black;
+  color:white;
+  font-family:Bangers;
+}

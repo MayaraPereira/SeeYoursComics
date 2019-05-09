@@ -1,0 +1,12 @@
+<div class="parallax" id="bg"></div>
+<ul class="collection">
+  <div  class="collection-item dismissable" style="color:#009688;"><h1>SeeYoursComics</h1></div>
+  <li class="collection-item dismissable">
+      <input #user_name type="text" class="secondary-content" style="font-size:220%" placeholder="User name">
+      <input #password type="password" class="secondary-content" style="font-size:220%" placeholder="Password">
+      <a routerLink="/comics" class="secondary-content">
+        <i (click)="login(password.value); password.value='';"
+        class="material-icons" style="font-size:60px;">send</i>
+      </a>
+  </li>
+</ul>

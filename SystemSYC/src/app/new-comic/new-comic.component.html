@@ -1,0 +1,14 @@
+<app-menu></app-menu>
+<ul class="collection">
+  <div  class="collection-item dismissable"><h1>New Comic</h1></div>
+  <li class="collection-item dismissable">
+      <input #title type="text" class="secondary-content" style="font-size:220%" placeholder="Title">
+      <input #superhero type="text" class="secondary-content" style="font-size:220%" placeholder="Super hero">
+      <input #edition type="number" class="secondary-content" style="font-size:220%" placeholder="Number edition">
+      <input #price   type="number" class="secondary-content" style="font-size:220%; color:white;" placeholder="Price">
+      <a routerLink="/comics" class="secondary-content">
+        <i (click)="add(title.value, superhero.value, edition.value, price.value); title.value=''; superhero.value=''; edition.value=''; price.value=''"
+        class="material-icons" style="font-size:60px;">save</i>
+      </a>
+  </li>
+</ul>

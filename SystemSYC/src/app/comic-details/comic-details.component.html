@@ -1,0 +1,29 @@
+<app-menu></app-menu>
+<ul class="collection" *ngIf="comic">
+  <li class="collection-item dismissable">
+      <input #title [(ngModel)]="comic.title" type="text" class="secondary-content" style="font-size:400%; color:white;" placeholder="Title">
+      <input #superhero [(ngModel)]="comic.superhero" type="text" class="secondary-content" style="font-size:220%; color:white;" placeholder="Super hero">
+      <input [(ngModel)]="comic.edition" type="number" class="secondary-content" style="font-size:220%; color:white;" placeholder="Number edition">
+      <input [(ngModel)]="comic.price" type="number" class="secondary-content" style="font-size:220%; color:white;" placeholder="Price">
+      <input #date [(ngModel)]="comic.date" type="date" class="secondary-content" style="font-size:220%; color:white;">
+      <input #borrowed_name [(ngModel)]="comic.borrowed_name" type="text" class="secondary-content" style="font-size:220%; color:white;" placeholder="borrowed for ...">
+      <div class="estrelas">
+        <input [(ngModel)]="comic.rating" type="radio" id="cm_star-empty" name="fb" value="" checked>
+        <label for="cm_star-1"><i class="fa"></i></label>
+        <input [(ngModel)]="comic.rating" type="radio" id="cm_star-1" name="fb" value="1" />
+        <label for="cm_star-2"><i class="fa"></i></label>
+        <input [(ngModel)]="comic.rating" type="radio" id="cm_star-2" name="fb" value="2"/>
+        <label for="cm_star-3"><i class="fa"></i></label>
+        <input [(ngModel)]="comic.rating" type="radio" id="cm_star-3" name="fb" value="3"/>
+        <label for="cm_star-4"><i class="fa"></i></label>
+        <input [(ngModel)]="comic.rating" type="radio" id="cm_star-4" name="fb" value="4"/>
+        <label for="cm_star-5"><i class="fa"></i></label>
+        <input [(ngModel)]="comic.rating" type="radio" id="cm_star-5" name="fb" value="5"/>
+      </div>
+      <a class="secondary-content">
+        <!-- <i class="material-icons"  (click)="setLoan()" style="font-size:60px; position:relative; top:-6px; left:-13px;"  [class.loan]="comic.loan === 1"  [class.late_loan]="comic.loan === 2">flag</i> -->
+        <i routerLink="/comics" (click)="save(title.value, superhero.value, date.value, borrowed_name.value)" class="material-icons" style="font-size:60px;">save</i>
+        <i routerLink="/comics" (click)="delete()" class="material-icons" style="font-size:60px;">delete</i>
+      </a>
+  </li>
+</ul>

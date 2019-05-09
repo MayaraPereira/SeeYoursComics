@@ -1,0 +1,14 @@
+#bg{
+	background-image:url(https://images7.alphacoders.com/434/434074.jpg);
+  background-repeat:no-repeat;
+  background-size:100%;
+  bottom:0;
+	right:0;
+	top:0%;
+  left:0;
+  overflow:auto;
+  padding:3em;
+  position:absolute;
+  text-align:center;
+  background-size:cover;
+}

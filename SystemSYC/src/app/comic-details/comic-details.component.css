@@ -1,0 +1,62 @@
+.collection{
+	width:50%;
+	left:25%;
+	top:35%;
+	position:absolute;
+	border-radius:35px;
+	border:5px solid;
+	border-color: white;
+	background-color:black;
+}
+
+.collection-item {
+  text-align:center;
+  background-color:black;
+  color:white;
+  font-family:Bangers;
+}
+
+.loan{
+	color:#009688;
+}
+
+.late_loan{
+	color:red;
+}
+
+.estrelas{
+  visibility: hidden;
+}
+.estrelas label i.fa:before {
+  content:'\f005';
+  color: #FC0;
+	visibility: visible;
+}
+.estrelas input[type=radio]:checked ~ label i.fa:before {
+  color: #CCC;
+}
+
+.balao2{
+	background: white;
+	border-radius: 15px;
+	width: 0px;
+	height: 0px;
+	position: relative;
+	visibility: hidden;
+}
+.balao2:after{
+
+	content: "";
+
+	width: 0;
+	height: 0;
+
+	position: absolute;
+
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid white;
+
+	bottom: -20px;
+	left: 80%;
+}

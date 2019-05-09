@@ -1,0 +1,24 @@
+.collection{
+	width:50%;
+	left:25%;
+	top:15%;
+	position:absolute;
+	border-radius:35px;
+	border:5px solid;
+	border-color: white;
+	background-color:black;
+}
+
+.collection-header{
+	text-align:center;
+	color:white;
+	background-color:black;
+}
+
+.loan{
+	color:#009688;
+}
+
+.late_loan{
+	color:red;
+}

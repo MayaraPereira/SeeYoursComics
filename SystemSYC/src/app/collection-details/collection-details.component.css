@@ -1,0 +1,56 @@
+.collection{
+	width:50%;
+	left:25%;
+	top:15%;
+	position:absolute;
+	border-radius:35px;
+	border:5px solid;
+	border-color: white;
+	background-color:black;
+}
+
+.collection-header{
+	text-align:center;
+	color:white;
+	background-color:black;
+}
+
+.loan{
+	color:#009688;
+}
+
+.late_loan{
+	color:red;
+}
+
+#divBusca{
+  background-color:#E0EEEE;
+  border:solid 2px #5F9EA0;
+  border-radius:10px;
+  width:300px;
+  height:32px;
+}
+
+#txtBusca{
+  float:left;
+  background-color:transparent;
+  padding-left:5px;
+  font-size:18px;
+  border:none;
+  height:32px;
+  width:191px;
+}
+
+#btnBusca{
+  border:none;
+  float:left;
+  height:32px;
+  border-radius:0 7px 7px 0;
+  width:70px;
+  font-weight:bold;
+  background:#5F9EA0;
+}
+
+#divBusca img{
+  float:left;
+}

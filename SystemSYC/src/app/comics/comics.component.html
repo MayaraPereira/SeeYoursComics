@@ -1,0 +1,19 @@
+<app-menu></app-menu>
+<ul class="collection" style="text-align:right;">
+    <div  class="collection-header" style="font-family:Bangers; text-align:center;">
+      <h1>Yours Comics</h1>
+      <i class="material-icons" script >monetization_on</i> {{amount.toLocaleString('en-us', {minimumFractionDigits: 2})}}
+    </div>
+    <li *ngFor="let comic of comics">
+      <div routerLink="/comic-details/{{comic.id}}" class="collapsible-header "
+      style="color:white; background-color:black; font-family:Bangers;font-size:160%;"
+      onmouseover="this.style.color='#009688';" onmouseout="this.style.color='white';">
+        <i class="material-icons" script >book</i>
+        Title: {{ comic.title }} - N: {{ comic.edition }}
+        <i class="material-icons" style="font-size:28px; position:relative; left:13px;"  [class.loan]="comic.loan === 1"  [class.late_loan]="comic.loan === 2">flag</i>
+      </div>
+    </li>
+    <a routerLink="/new-comic" class="waves-effect waves-light btn"  style="background-color:#009688;">
+      <i class="material-icons" style="font-size:50px; background-color:#009688;">add</i>
+    </a>
+</ul>
